@@ -1,0 +1,642 @@
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcublas.so.8.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcudnn.so.5 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcufft.so.8.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcurand.so.8.0 locally
+conv3 (?, 7, 7, 384)
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE3 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:885] Found device 0 with properties: 
+name: TITAN X (Pascal)
+major: 6 minor: 1 memoryClockRate (GHz) 1.531
+pciBusID 0000:02:00.0
+Total memory: 11.90GiB
+Free memory: 11.40GiB
+W tensorflow/stream_executor/cuda/cuda_driver.cc:590] creating context when one is currently active; existing: 0x4ed5420
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:885] Found device 1 with properties: 
+name: TITAN X (Pascal)
+major: 6 minor: 1 memoryClockRate (GHz) 1.531
+pciBusID 0000:03:00.0
+Total memory: 11.90GiB
+Free memory: 11.76GiB
+W tensorflow/stream_executor/cuda/cuda_driver.cc:590] creating context when one is currently active; existing: 0x4ed9250
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:885] Found device 2 with properties: 
+name: TITAN X (Pascal)
+major: 6 minor: 1 memoryClockRate (GHz) 1.531
+pciBusID 0000:82:00.0
+Total memory: 11.90GiB
+Free memory: 11.76GiB
+W tensorflow/stream_executor/cuda/cuda_driver.cc:590] creating context when one is currently active; existing: 0x4edd0b0
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:885] Found device 3 with properties: 
+name: TITAN X (Pascal)
+major: 6 minor: 1 memoryClockRate (GHz) 1.531
+pciBusID 0000:83:00.0
+Total memory: 11.90GiB
+Free memory: 11.76GiB
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:777] Peer access not supported between device ordinals 0 and 2
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:777] Peer access not supported between device ordinals 0 and 3
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:777] Peer access not supported between device ordinals 1 and 2
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:777] Peer access not supported between device ordinals 1 and 3
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:777] Peer access not supported between device ordinals 2 and 0
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:777] Peer access not supported between device ordinals 2 and 1
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:777] Peer access not supported between device ordinals 3 and 0
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:777] Peer access not supported between device ordinals 3 and 1
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:906] DMA: 0 1 2 3 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:916] 0:   Y Y N N 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:916] 1:   Y Y N N 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:916] 2:   N N Y Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:916] 3:   N N Y Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: TITAN X (Pascal), pci bus id: 0000:02:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:1) -> (device: 1, name: TITAN X (Pascal), pci bus id: 0000:03:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:2) -> (device: 2, name: TITAN X (Pascal), pci bus id: 0000:82:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:3) -> (device: 3, name: TITAN X (Pascal), pci bus id: 0000:83:00.0)
+begin layer =  0
+shuffled!
+Iter 1152, Minibatch Loss= 95.315984, Testing Accuracy= 0.52983, Precision = 0.52983, Recall = 1.00000, f1_score = 0.69267
+/usr/local/lib/python3.5/dist-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/usr/local/lib/python3.5/dist-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 due to no predicted samples.
+  'precision', 'predicted', average, warn_for)
+Iter 2432, Minibatch Loss= 40.831358, Testing Accuracy= 0.47017, Precision = 0.00000, Recall = 0.00000, f1_score = 0.00000
+Iter 3712, Minibatch Loss= 14.804350, Testing Accuracy= 0.53517, Precision = 0.56822, Recall = 0.51092, f1_score = 0.53805
+Iter 4992, Minibatch Loss= 7.549589, Testing Accuracy= 0.47907, Precision = 0.61905, Recall = 0.04370, f1_score = 0.08163
+shuffled!
+Iter 6272, Minibatch Loss= 3.604744, Testing Accuracy= 0.57346, Precision = 0.56017, Recall = 0.90756, f1_score = 0.69275
+Iter 7552, Minibatch Loss= 1.331483, Testing Accuracy= 0.57435, Precision = 0.61185, Recall = 0.53782, f1_score = 0.57245
+Iter 8832, Minibatch Loss= 1.046811, Testing Accuracy= 0.55031, Precision = 0.56818, Recall = 0.63025, f1_score = 0.59761
+Iter 10112, Minibatch Loss= 2.089076, Testing Accuracy= 0.52983, Precision = 0.52983, Recall = 1.00000, f1_score = 0.69267
+shuffled!
+Iter 11392, Minibatch Loss= 1.499198, Testing Accuracy= 0.54408, Precision = 0.54776, Recall = 0.80000, f1_score = 0.65027
+Iter 12672, Minibatch Loss= 0.880680, Testing Accuracy= 0.55922, Precision = 0.55123, Recall = 0.90420, f1_score = 0.68491
+Iter 13952, Minibatch Loss= 1.015051, Testing Accuracy= 0.52983, Precision = 0.52983, Recall = 1.00000, f1_score = 0.69267
+Iter 15232, Minibatch Loss= 1.399707, Testing Accuracy= 0.55565, Precision = 0.74000, Recall = 0.24874, f1_score = 0.37233
+shuffled!
+Iter 16512, Minibatch Loss= 1.007227, Testing Accuracy= 0.57079, Precision = 0.55819, Recall = 0.91092, f1_score = 0.69221
+Iter 17792, Minibatch Loss= 0.854952, Testing Accuracy= 0.50134, Precision = 0.78689, Recall = 0.08067, f1_score = 0.14634
+Iter 19072, Minibatch Loss= 0.753347, Testing Accuracy= 0.57614, Precision = 0.58561, Recall = 0.68403, f1_score = 0.63101
+Iter 20352, Minibatch Loss= 0.716219, Testing Accuracy= 0.53428, Precision = 0.53249, Recall = 0.99160, f1_score = 0.69289
+Iter 21632, Minibatch Loss= 0.720524, Testing Accuracy= 0.60819, Precision = 0.58777, Recall = 0.87227, f1_score = 0.70230
+shuffled!
+Iter 22912, Minibatch Loss= 0.628262, Testing Accuracy= 0.60819, Precision = 0.64014, Recall = 0.59496, f1_score = 0.61672
+Iter 24192, Minibatch Loss= 0.701277, Testing Accuracy= 0.62511, Precision = 0.59864, Recall = 0.88739, f1_score = 0.71496
+Iter 25472, Minibatch Loss= 0.670015, Testing Accuracy= 0.55209, Precision = 0.54315, Recall = 0.97311, f1_score = 0.69717
+Iter 26752, Minibatch Loss= 0.717614, Testing Accuracy= 0.60463, Precision = 0.63269, Recall = 0.60504, f1_score = 0.61856
+shuffled!
+Iter 28032, Minibatch Loss= 0.679302, Testing Accuracy= 0.60552, Precision = 0.58482, Recall = 0.88067, f1_score = 0.70288
+Iter 29312, Minibatch Loss= 0.646864, Testing Accuracy= 0.56990, Precision = 0.55416, Recall = 0.96303, f1_score = 0.70350
+Iter 30592, Minibatch Loss= 0.641988, Testing Accuracy= 0.59751, Precision = 0.57663, Recall = 0.90420, f1_score = 0.70419
+Iter 31872, Minibatch Loss= 0.629488, Testing Accuracy= 0.62956, Precision = 0.67653, Recall = 0.57647, f1_score = 0.62250
+shuffled!
+Iter 33152, Minibatch Loss= 0.625182, Testing Accuracy= 0.56812, Precision = 0.77778, Recall = 0.25882, f1_score = 0.38840
+Iter 34432, Minibatch Loss= 0.630993, Testing Accuracy= 0.60997, Precision = 0.58617, Recall = 0.89748, f1_score = 0.70916
+Iter 35712, Minibatch Loss= 0.657144, Testing Accuracy= 0.63313, Precision = 0.61200, Recall = 0.84034, f1_score = 0.70822
+Iter 36992, Minibatch Loss= 0.571226, Testing Accuracy= 0.62778, Precision = 0.65554, Recall = 0.62689, f1_score = 0.64089
+Iter 38272, Minibatch Loss= 0.559603, Testing Accuracy= 0.62066, Precision = 0.59929, Recall = 0.85714, f1_score = 0.70539
+shuffled!
+Iter 39552, Minibatch Loss= 0.551806, Testing Accuracy= 0.61086, Precision = 0.59450, Recall = 0.83529, f1_score = 0.69462
+Iter 40832, Minibatch Loss= 0.589086, Testing Accuracy= 0.58504, Precision = 0.56840, Recall = 0.90084, f1_score = 0.69701
+Iter 42112, Minibatch Loss= 0.552084, Testing Accuracy= 0.55655, Precision = 0.87023, Recall = 0.19160, f1_score = 0.31405
+Iter 43392, Minibatch Loss= 0.678745, Testing Accuracy= 0.60552, Precision = 0.58034, Recall = 0.92269, f1_score = 0.71252
+shuffled!
+Iter 44672, Minibatch Loss= 0.880327, Testing Accuracy= 0.61443, Precision = 0.70149, Recall = 0.47395, f1_score = 0.56570
+Iter 45952, Minibatch Loss= 0.577471, Testing Accuracy= 0.57970, Precision = 0.73930, Recall = 0.31933, f1_score = 0.44601
+Iter 47232, Minibatch Loss= 0.579039, Testing Accuracy= 0.63134, Precision = 0.62483, Recall = 0.76134, f1_score = 0.68636
+Iter 48512, Minibatch Loss= 0.613135, Testing Accuracy= 0.61888, Precision = 0.60296, Recall = 0.82185, f1_score = 0.69559
+shuffled!
+Iter 49792, Minibatch Loss= 0.696002, Testing Accuracy= 0.52627, Precision = 0.84615, Recall = 0.12941, f1_score = 0.22449
+Iter 51072, Minibatch Loss= 0.787656, Testing Accuracy= 0.57257, Precision = 0.55861, Recall = 0.92101, f1_score = 0.69543
+Iter 52352, Minibatch Loss= 0.661314, Testing Accuracy= 0.60107, Precision = 0.79051, Recall = 0.33613, f1_score = 0.47170
+Iter 53632, Minibatch Loss= 0.604663, Testing Accuracy= 0.61264, Precision = 0.59639, Recall = 0.83193, f1_score = 0.69474
+Iter 54912, Minibatch Loss= 0.562089, Testing Accuracy= 0.64025, Precision = 0.65039, Recall = 0.69412, f1_score = 0.67154
+shuffled!
+Iter 56192, Minibatch Loss= 0.472749, Testing Accuracy= 0.62066, Precision = 0.60394, Recall = 0.82521, f1_score = 0.69744
+Iter 57472, Minibatch Loss= 0.547700, Testing Accuracy= 0.63580, Precision = 0.65449, Recall = 0.66218, f1_score = 0.65831
+Iter 58752, Minibatch Loss= 0.519715, Testing Accuracy= 0.64292, Precision = 0.74010, Recall = 0.50252, f1_score = 0.59860
+Iter 60032, Minibatch Loss= 0.548371, Testing Accuracy= 0.53250, Precision = 0.53131, Recall = 0.99832, f1_score = 0.69352
+shuffled!
+Iter 61312, Minibatch Loss= 2.587543, Testing Accuracy= 0.52983, Precision = 0.52983, Recall = 1.00000, f1_score = 0.69267
+Iter 62592, Minibatch Loss= 3.108182, Testing Accuracy= 0.53161, Precision = 0.53089, Recall = 0.99664, f1_score = 0.69276
+Iter 63872, Minibatch Loss= 1.812715, Testing Accuracy= 0.61799, Precision = 0.61433, Recall = 0.74958, f1_score = 0.67525
+Iter 65152, Minibatch Loss= 0.734645, Testing Accuracy= 0.58593, Precision = 0.75000, Recall = 0.32773, f1_score = 0.45614
+shuffled!
+Iter 66432, Minibatch Loss= 0.646827, Testing Accuracy= 0.62155, Precision = 0.64555, Recall = 0.63361, f1_score = 0.63953
+Iter 67712, Minibatch Loss= 0.530195, Testing Accuracy= 0.62066, Precision = 0.62940, Recall = 0.69076, f1_score = 0.65865
+Iter 68992, Minibatch Loss= 0.574385, Testing Accuracy= 0.61621, Precision = 0.59535, Recall = 0.86050, f1_score = 0.70378
+Iter 70272, Minibatch Loss= 0.559906, Testing Accuracy= 0.59662, Precision = 0.58180, Recall = 0.84874, f1_score = 0.69036
+shuffled!
+Iter 71552, Minibatch Loss= 0.539531, Testing Accuracy= 0.61532, Precision = 0.67304, Recall = 0.53277, f1_score = 0.59475
+Iter 72832, Minibatch Loss= 0.492558, Testing Accuracy= 0.62333, Precision = 0.60969, Recall = 0.80336, f1_score = 0.69326
+Iter 74112, Minibatch Loss= 0.502030, Testing Accuracy= 0.60196, Precision = 0.58390, Recall = 0.86555, f1_score = 0.69736
+Iter 75392, Minibatch Loss= 0.522544, Testing Accuracy= 0.61175, Precision = 0.59975, Recall = 0.80336, f1_score = 0.68678
+Iter 76672, Minibatch Loss= 0.522504, Testing Accuracy= 0.62066, Precision = 0.62193, Recall = 0.72437, f1_score = 0.66925
+shuffled!
+Iter 77952, Minibatch Loss= 0.533422, Testing Accuracy= 0.61264, Precision = 0.70101, Recall = 0.46891, f1_score = 0.56193
+Iter 79232, Minibatch Loss= 0.519398, Testing Accuracy= 0.59305, Precision = 0.73793, Recall = 0.35966, f1_score = 0.48362
+Iter 80512, Minibatch Loss= 0.501147, Testing Accuracy= 0.61443, Precision = 0.74251, Recall = 0.41681, f1_score = 0.53391
+Iter 81792, Minibatch Loss= 0.472713, Testing Accuracy= 0.61621, Precision = 0.59297, Recall = 0.87899, f1_score = 0.70819
+shuffled!
+Iter 83072, Minibatch Loss= 0.469930, Testing Accuracy= 0.63580, Precision = 0.65347, Recall = 0.66555, f1_score = 0.65945
+Iter 84352, Minibatch Loss= 0.447252, Testing Accuracy= 0.60997, Precision = 0.62133, Recall = 0.67563, f1_score = 0.64734
+Iter 85632, Minibatch Loss= 0.501160, Testing Accuracy= 0.63580, Precision = 0.63401, Recall = 0.73950, f1_score = 0.68270
+Iter 86912, Minibatch Loss= 0.464121, Testing Accuracy= 0.63045, Precision = 0.62535, Recall = 0.75462, f1_score = 0.68393
+shuffled!
+Iter 88192, Minibatch Loss= 0.459656, Testing Accuracy= 0.62066, Precision = 0.59724, Recall = 0.87227, f1_score = 0.70902
+Iter 89472, Minibatch Loss= 0.482231, Testing Accuracy= 0.61977, Precision = 0.59929, Recall = 0.85210, f1_score = 0.70368
+Iter 90752, Minibatch Loss= 0.445680, Testing Accuracy= 0.63402, Precision = 0.66312, Recall = 0.62857, f1_score = 0.64538
+Iter 92032, Minibatch Loss= 0.541383, Testing Accuracy= 0.58771, Precision = 0.56613, Recall = 0.94958, f1_score = 0.70935
+Iter 93312, Minibatch Loss= 0.460724, Testing Accuracy= 0.61086, Precision = 0.67556, Recall = 0.51092, f1_score = 0.58182
+shuffled!
+Iter 94592, Minibatch Loss= 0.401928, Testing Accuracy= 0.62155, Precision = 0.62611, Recall = 0.70924, f1_score = 0.66509
+Iter 95872, Minibatch Loss= 0.417194, Testing Accuracy= 0.64737, Precision = 0.65971, Recall = 0.69076, f1_score = 0.67488
+Iter 97152, Minibatch Loss= 0.408434, Testing Accuracy= 0.63936, Precision = 0.65574, Recall = 0.67227, f1_score = 0.66390
+Iter 98432, Minibatch Loss= 0.404874, Testing Accuracy= 0.64737, Precision = 0.66074, Recall = 0.68739, f1_score = 0.67381
+shuffled!
+Iter 99712, Minibatch Loss= 0.367590, Testing Accuracy= 0.64203, Precision = 0.64254, Recall = 0.73109, f1_score = 0.68396
+Iter 100992, Minibatch Loss= 0.378420, Testing Accuracy= 0.63936, Precision = 0.68411, Recall = 0.59328, f1_score = 0.63546
+Iter 102272, Minibatch Loss= 0.360098, Testing Accuracy= 0.63402, Precision = 0.62399, Recall = 0.77815, f1_score = 0.69260
+Iter 103552, Minibatch Loss= 0.371501, Testing Accuracy= 0.63847, Precision = 0.67276, Recall = 0.61849, f1_score = 0.64448
+shuffled!
+Iter 104832, Minibatch Loss= 0.407696, Testing Accuracy= 0.62689, Precision = 0.60000, Recall = 0.88739, f1_score = 0.71593
+Iter 106112, Minibatch Loss= 0.344347, Testing Accuracy= 0.64381, Precision = 0.63713, Recall = 0.76134, f1_score = 0.69372
+Iter 107392, Minibatch Loss= 0.356259, Testing Accuracy= 0.63936, Precision = 0.63049, Recall = 0.77143, f1_score = 0.69388
+Iter 108672, Minibatch Loss= 0.380604, Testing Accuracy= 0.65984, Precision = 0.71173, Recall = 0.60168, f1_score = 0.65209
+Iter 109952, Minibatch Loss= 0.381972, Testing Accuracy= 0.63936, Precision = 0.62599, Recall = 0.79328, f1_score = 0.69978
+shuffled!
+Iter 111232, Minibatch Loss= 0.312963, Testing Accuracy= 0.62600, Precision = 0.65653, Recall = 0.61681, f1_score = 0.63605
+Iter 112512, Minibatch Loss= 0.385291, Testing Accuracy= 0.64292, Precision = 0.62532, Recall = 0.81345, f1_score = 0.70709
+Iter 113792, Minibatch Loss= 0.359290, Testing Accuracy= 0.65183, Precision = 0.66612, Recall = 0.68739, f1_score = 0.67659
+Iter 115072, Minibatch Loss= 0.350930, Testing Accuracy= 0.64114, Precision = 0.64502, Recall = 0.71765, f1_score = 0.67940
+shuffled!
+Iter 116352, Minibatch Loss= 0.321390, Testing Accuracy= 0.61532, Precision = 0.68650, Recall = 0.50420, f1_score = 0.58140
+Iter 117632, Minibatch Loss= 0.351410, Testing Accuracy= 0.63313, Precision = 0.62216, Recall = 0.78319, f1_score = 0.69345
+Iter 118912, Minibatch Loss= 0.327452, Testing Accuracy= 0.65984, Precision = 0.69052, Recall = 0.64874, f1_score = 0.66898
+Iter 120192, Minibatch Loss= 0.362914, Testing Accuracy= 0.64470, Precision = 0.67754, Recall = 0.62857, f1_score = 0.65214
+shuffled!
+Iter 121472, Minibatch Loss= 0.334032, Testing Accuracy= 0.65183, Precision = 0.66346, Recall = 0.69580, f1_score = 0.67925
+Iter 122752, Minibatch Loss= 0.301698, Testing Accuracy= 0.65004, Precision = 0.67354, Recall = 0.65882, f1_score = 0.66610
+Iter 124032, Minibatch Loss= 0.315655, Testing Accuracy= 0.63669, Precision = 0.68813, Recall = 0.57479, f1_score = 0.62637
+Iter 125312, Minibatch Loss= 0.328363, Testing Accuracy= 0.65628, Precision = 0.66882, Recall = 0.69580, f1_score = 0.68204
+shuffled!
+Iter 126592, Minibatch Loss= 0.325681, Testing Accuracy= 0.63134, Precision = 0.69717, Recall = 0.53782, f1_score = 0.60721
+Iter 127872, Minibatch Loss= 0.292141, Testing Accuracy= 0.64025, Precision = 0.62888, Recall = 0.78319, f1_score = 0.69760
+Iter 129152, Minibatch Loss= 0.306773, Testing Accuracy= 0.64381, Precision = 0.69307, Recall = 0.58824, f1_score = 0.63636
+Iter 130432, Minibatch Loss= 0.318206, Testing Accuracy= 0.64203, Precision = 0.64555, Recall = 0.71933, f1_score = 0.68045
+Iter 131712, Minibatch Loss= 0.312986, Testing Accuracy= 0.63313, Precision = 0.67562, Recall = 0.59160, f1_score = 0.63082
+shuffled!
+Iter 132992, Minibatch Loss= 0.287634, Testing Accuracy= 0.64737, Precision = 0.63144, Recall = 0.80336, f1_score = 0.70710
+Iter 134272, Minibatch Loss= 0.277770, Testing Accuracy= 0.62867, Precision = 0.68697, Recall = 0.54958, f1_score = 0.61064
+Iter 135552, Minibatch Loss= 0.299978, Testing Accuracy= 0.65361, Precision = 0.64714, Recall = 0.76134, f1_score = 0.69961
+Iter 136832, Minibatch Loss= 0.280306, Testing Accuracy= 0.64826, Precision = 0.64793, Recall = 0.73613, f1_score = 0.68922
+shuffled!
+Iter 138112, Minibatch Loss= 0.288876, Testing Accuracy= 0.65094, Precision = 0.69260, Recall = 0.61345, f1_score = 0.65062
+Iter 139392, Minibatch Loss= 0.277897, Testing Accuracy= 0.65272, Precision = 0.64706, Recall = 0.75798, f1_score = 0.69814
+Iter 140672, Minibatch Loss= 0.290253, Testing Accuracy= 0.65717, Precision = 0.68421, Recall = 0.65546, f1_score = 0.66953
+Iter 141952, Minibatch Loss= 0.265643, Testing Accuracy= 0.65094, Precision = 0.64117, Recall = 0.77479, f1_score = 0.70167
+shuffled!
+Iter 143232, Minibatch Loss= 0.264026, Testing Accuracy= 0.65717, Precision = 0.67918, Recall = 0.66891, f1_score = 0.67401
+Iter 144512, Minibatch Loss= 0.248810, Testing Accuracy= 0.65450, Precision = 0.67632, Recall = 0.66723, f1_score = 0.67174
+Iter 145792, Minibatch Loss= 0.266389, Testing Accuracy= 0.65717, Precision = 0.66881, Recall = 0.69916, f1_score = 0.68365
+Iter 147072, Minibatch Loss= 0.249233, Testing Accuracy= 0.65094, Precision = 0.65934, Recall = 0.70588, f1_score = 0.68182
+Iter 148352, Minibatch Loss= 0.274463, Testing Accuracy= 0.66785, Precision = 0.65503, Recall = 0.78824, f1_score = 0.71548
+shuffled!
+Iter 149632, Minibatch Loss= 0.253634, Testing Accuracy= 0.65628, Precision = 0.66102, Recall = 0.72101, f1_score = 0.68971
+begin layer =  1
+shuffled!
+Iter 1152, Minibatch Loss= 6.553321, Testing Accuracy= 0.47017, Precision = 0.00000, Recall = 0.00000, f1_score = 0.00000
+Iter 2432, Minibatch Loss= 1.234325, Testing Accuracy= 0.51915, Precision = 0.58359, Recall = 0.32269, f1_score = 0.41558
+Iter 3712, Minibatch Loss= 0.769883, Testing Accuracy= 0.52983, Precision = 0.52983, Recall = 1.00000, f1_score = 0.69267
+Iter 4992, Minibatch Loss= 0.703572, Testing Accuracy= 0.54319, Precision = 0.54116, Recall = 0.90588, f1_score = 0.67756
+shuffled!
+Iter 6272, Minibatch Loss= 0.684419, Testing Accuracy= 0.52983, Precision = 0.52983, Recall = 1.00000, f1_score = 0.69267
+Iter 7552, Minibatch Loss= 0.687350, Testing Accuracy= 0.54230, Precision = 0.53774, Recall = 0.96975, f1_score = 0.69185
+Iter 8832, Minibatch Loss= 0.683735, Testing Accuracy= 0.53072, Precision = 0.53036, Recall = 0.99832, f1_score = 0.69271
+Iter 10112, Minibatch Loss= 0.688676, Testing Accuracy= 0.59573, Precision = 0.60930, Recall = 0.66050, f1_score = 0.63387
+shuffled!
+Iter 11392, Minibatch Loss= 0.680679, Testing Accuracy= 0.52983, Precision = 0.52988, Recall = 0.99832, f1_score = 0.69231
+Iter 12672, Minibatch Loss= 0.676500, Testing Accuracy= 0.57970, Precision = 0.56481, Recall = 0.90084, f1_score = 0.69430
+Iter 13952, Minibatch Loss= 0.669053, Testing Accuracy= 0.53963, Precision = 0.53578, Recall = 0.98151, f1_score = 0.69318
+Iter 15232, Minibatch Loss= 0.677390, Testing Accuracy= 0.54675, Precision = 0.53974, Recall = 0.98151, f1_score = 0.69648
+shuffled!
+Iter 16512, Minibatch Loss= 0.653960, Testing Accuracy= 0.58593, Precision = 0.58856, Recall = 0.72605, f1_score = 0.65011
+Iter 17792, Minibatch Loss= 0.674208, Testing Accuracy= 0.57970, Precision = 0.70297, Recall = 0.35798, f1_score = 0.47439
+Iter 19072, Minibatch Loss= 0.669198, Testing Accuracy= 0.56545, Precision = 0.72574, Recall = 0.28908, f1_score = 0.41346
+Iter 20352, Minibatch Loss= 0.674282, Testing Accuracy= 0.55476, Precision = 0.54581, Recall = 0.95126, f1_score = 0.69363
+Iter 21632, Minibatch Loss= 0.645348, Testing Accuracy= 0.58504, Precision = 0.56811, Recall = 0.90420, f1_score = 0.69780
+shuffled!
+Iter 22912, Minibatch Loss= 0.663277, Testing Accuracy= 0.59394, Precision = 0.62942, Recall = 0.56807, f1_score = 0.59717
+Iter 24192, Minibatch Loss= 0.637181, Testing Accuracy= 0.57524, Precision = 0.56371, Recall = 0.87731, f1_score = 0.68639
+Iter 25472, Minibatch Loss= 0.657633, Testing Accuracy= 0.58415, Precision = 0.66667, Recall = 0.43025, f1_score = 0.52298
+Iter 26752, Minibatch Loss= 0.645502, Testing Accuracy= 0.55922, Precision = 0.54950, Recall = 0.93277, f1_score = 0.69159
+shuffled!
+Iter 28032, Minibatch Loss= 0.633944, Testing Accuracy= 0.56990, Precision = 0.55512, Recall = 0.94790, f1_score = 0.70019
+Iter 29312, Minibatch Loss= 0.627815, Testing Accuracy= 0.60819, Precision = 0.62243, Recall = 0.66218, f1_score = 0.64169
+Iter 30592, Minibatch Loss= 0.620121, Testing Accuracy= 0.60730, Precision = 0.61424, Recall = 0.69580, f1_score = 0.65248
+Iter 31872, Minibatch Loss= 0.638510, Testing Accuracy= 0.60285, Precision = 0.58361, Recall = 0.87395, f1_score = 0.69987
+shuffled!
+Iter 33152, Minibatch Loss= 0.631906, Testing Accuracy= 0.59127, Precision = 0.57312, Recall = 0.89580, f1_score = 0.69902
+Iter 34432, Minibatch Loss= 0.604154, Testing Accuracy= 0.57524, Precision = 0.61523, Recall = 0.52941, f1_score = 0.56911
+Iter 35712, Minibatch Loss= 0.601099, Testing Accuracy= 0.61710, Precision = 0.62595, Recall = 0.68908, f1_score = 0.65600
+Iter 36992, Minibatch Loss= 0.616987, Testing Accuracy= 0.59394, Precision = 0.57308, Recall = 0.91597, f1_score = 0.70505
+Iter 38272, Minibatch Loss= 0.602790, Testing Accuracy= 0.60196, Precision = 0.59181, Recall = 0.80168, f1_score = 0.68094
+shuffled!
+Iter 39552, Minibatch Loss= 0.583406, Testing Accuracy= 0.61175, Precision = 0.64273, Recall = 0.60168, f1_score = 0.62153
+Iter 40832, Minibatch Loss= 0.580164, Testing Accuracy= 0.56901, Precision = 0.55623, Recall = 0.92269, f1_score = 0.69406
+Iter 42112, Minibatch Loss= 0.611090, Testing Accuracy= 0.61888, Precision = 0.63027, Recall = 0.67899, f1_score = 0.65372
+Iter 43392, Minibatch Loss= 0.588053, Testing Accuracy= 0.60819, Precision = 0.63668, Recall = 0.60672, f1_score = 0.62134
+shuffled!
+Iter 44672, Minibatch Loss= 0.568371, Testing Accuracy= 0.61710, Precision = 0.60956, Recall = 0.77143, f1_score = 0.68101
+Iter 45952, Minibatch Loss= 0.556429, Testing Accuracy= 0.61443, Precision = 0.64413, Recall = 0.60840, f1_score = 0.62576
+Iter 47232, Minibatch Loss= 0.568442, Testing Accuracy= 0.59751, Precision = 0.58079, Recall = 0.86387, f1_score = 0.69459
+Iter 48512, Minibatch Loss= 0.572822, Testing Accuracy= 0.60285, Precision = 0.59638, Recall = 0.77479, f1_score = 0.67398
+shuffled!
+Iter 49792, Minibatch Loss= 0.562977, Testing Accuracy= 0.61086, Precision = 0.65800, Recall = 0.55294, f1_score = 0.60091
+Iter 51072, Minibatch Loss= 0.528153, Testing Accuracy= 0.61799, Precision = 0.60560, Recall = 0.80000, f1_score = 0.68936
+Iter 52352, Minibatch Loss= 0.518994, Testing Accuracy= 0.60908, Precision = 0.61337, Recall = 0.70924, f1_score = 0.65783
+Iter 53632, Minibatch Loss= 0.566566, Testing Accuracy= 0.63580, Precision = 0.67748, Recall = 0.59664, f1_score = 0.63450
+Iter 54912, Minibatch Loss= 0.551564, Testing Accuracy= 0.62689, Precision = 0.64103, Recall = 0.67227, f1_score = 0.65628
+shuffled!
+Iter 56192, Minibatch Loss= 0.495286, Testing Accuracy= 0.62333, Precision = 0.61436, Recall = 0.77647, f1_score = 0.68597
+Iter 57472, Minibatch Loss= 0.519931, Testing Accuracy= 0.62600, Precision = 0.68116, Recall = 0.55294, f1_score = 0.61039
+Iter 58752, Minibatch Loss= 0.523848, Testing Accuracy= 0.58682, Precision = 0.57222, Recall = 0.87227, f1_score = 0.69108
+Iter 60032, Minibatch Loss= 0.514979, Testing Accuracy= 0.63580, Precision = 0.72249, Recall = 0.50756, f1_score = 0.59625
+shuffled!
+Iter 61312, Minibatch Loss= 0.512043, Testing Accuracy= 0.62956, Precision = 0.62345, Recall = 0.75966, f1_score = 0.68485
+Iter 62592, Minibatch Loss= 0.463684, Testing Accuracy= 0.60997, Precision = 0.61527, Recall = 0.70420, f1_score = 0.65674
+Iter 63872, Minibatch Loss= 0.491403, Testing Accuracy= 0.61621, Precision = 0.66335, Recall = 0.55966, f1_score = 0.60711
+Iter 65152, Minibatch Loss= 0.524304, Testing Accuracy= 0.59840, Precision = 0.58491, Recall = 0.83361, f1_score = 0.68746
+shuffled!
+Iter 66432, Minibatch Loss= 0.505513, Testing Accuracy= 0.59305, Precision = 0.62825, Recall = 0.56807, f1_score = 0.59665
+Iter 67712, Minibatch Loss= 0.481588, Testing Accuracy= 0.63491, Precision = 0.65921, Recall = 0.64370, f1_score = 0.65136
+Iter 68992, Minibatch Loss= 0.495683, Testing Accuracy= 0.62956, Precision = 0.61854, Recall = 0.78487, f1_score = 0.69185
+Iter 70272, Minibatch Loss= 0.481644, Testing Accuracy= 0.62511, Precision = 0.62500, Recall = 0.73109, f1_score = 0.67390
+shuffled!
+Iter 71552, Minibatch Loss= 0.481985, Testing Accuracy= 0.61354, Precision = 0.59437, Recall = 0.85210, f1_score = 0.70028
+Iter 72832, Minibatch Loss= 0.465413, Testing Accuracy= 0.61264, Precision = 0.68605, Recall = 0.49580, f1_score = 0.57561
+Iter 74112, Minibatch Loss= 0.460522, Testing Accuracy= 0.65361, Precision = 0.64672, Recall = 0.76303, f1_score = 0.70008
+Iter 75392, Minibatch Loss= 0.456217, Testing Accuracy= 0.63313, Precision = 0.65535, Recall = 0.64874, f1_score = 0.65203
+Iter 76672, Minibatch Loss= 0.440599, Testing Accuracy= 0.65450, Precision = 0.66047, Recall = 0.71597, f1_score = 0.68710
+shuffled!
+Iter 77952, Minibatch Loss= 0.410565, Testing Accuracy= 0.63847, Precision = 0.63918, Recall = 0.72941, f1_score = 0.68132
+Iter 79232, Minibatch Loss= 0.426029, Testing Accuracy= 0.62956, Precision = 0.64696, Recall = 0.66218, f1_score = 0.65449
+Iter 80512, Minibatch Loss= 0.447363, Testing Accuracy= 0.63936, Precision = 0.66608, Recall = 0.64034, f1_score = 0.65296
+Iter 81792, Minibatch Loss= 0.422498, Testing Accuracy= 0.63224, Precision = 0.65965, Recall = 0.63193, f1_score = 0.64549
+shuffled!
+Iter 83072, Minibatch Loss= 0.390641, Testing Accuracy= 0.62956, Precision = 0.66011, Recall = 0.62017, f1_score = 0.63951
+Iter 84352, Minibatch Loss= 0.371953, Testing Accuracy= 0.65004, Precision = 0.63431, Recall = 0.80168, f1_score = 0.70824
+Iter 85632, Minibatch Loss= 0.432709, Testing Accuracy= 0.62066, Precision = 0.73151, Recall = 0.44874, f1_score = 0.55625
+Iter 86912, Minibatch Loss= 0.437241, Testing Accuracy= 0.62689, Precision = 0.68803, Recall = 0.54118, f1_score = 0.60583
+shuffled!
+Iter 88192, Minibatch Loss= 0.392422, Testing Accuracy= 0.61354, Precision = 0.66263, Recall = 0.55126, f1_score = 0.60183
+Iter 89472, Minibatch Loss= 0.384301, Testing Accuracy= 0.65628, Precision = 0.68048, Recall = 0.66218, f1_score = 0.67121
+Iter 90752, Minibatch Loss= 0.397625, Testing Accuracy= 0.63758, Precision = 0.65932, Recall = 0.65378, f1_score = 0.65654
+Iter 92032, Minibatch Loss= 0.374181, Testing Accuracy= 0.65984, Precision = 0.67960, Recall = 0.67731, f1_score = 0.67845
+Iter 93312, Minibatch Loss= 0.406446, Testing Accuracy= 0.64737, Precision = 0.65669, Recall = 0.70084, f1_score = 0.67805
+shuffled!
+Iter 94592, Minibatch Loss= 0.377266, Testing Accuracy= 0.65628, Precision = 0.68301, Recall = 0.65546, f1_score = 0.66895
+Iter 95872, Minibatch Loss= 0.360890, Testing Accuracy= 0.65004, Precision = 0.65683, Recall = 0.71092, f1_score = 0.68281
+Iter 97152, Minibatch Loss= 0.381274, Testing Accuracy= 0.65183, Precision = 0.65938, Recall = 0.70924, f1_score = 0.68340
+Iter 98432, Minibatch Loss= 0.391416, Testing Accuracy= 0.62689, Precision = 0.63174, Recall = 0.70924, f1_score = 0.66825
+shuffled!
+Iter 99712, Minibatch Loss= 0.368781, Testing Accuracy= 0.64648, Precision = 0.65764, Recall = 0.69412, f1_score = 0.67539
+Iter 100992, Minibatch Loss= 0.347811, Testing Accuracy= 0.64470, Precision = 0.65909, Recall = 0.68235, f1_score = 0.67052
+Iter 102272, Minibatch Loss= 0.362404, Testing Accuracy= 0.66251, Precision = 0.66314, Recall = 0.73782, f1_score = 0.69849
+Iter 103552, Minibatch Loss= 0.373497, Testing Accuracy= 0.65628, Precision = 0.66354, Recall = 0.71261, f1_score = 0.68720
+shuffled!
+Iter 104832, Minibatch Loss= 0.338009, Testing Accuracy= 0.67587, Precision = 0.70299, Recall = 0.67227, f1_score = 0.68729
+Iter 106112, Minibatch Loss= 0.324365, Testing Accuracy= 0.65450, Precision = 0.64765, Recall = 0.76303, f1_score = 0.70062
+Iter 107392, Minibatch Loss= 0.354172, Testing Accuracy= 0.67053, Precision = 0.68412, Recall = 0.70252, f1_score = 0.69320
+Iter 108672, Minibatch Loss= 0.354348, Testing Accuracy= 0.64737, Precision = 0.68392, Recall = 0.62185, f1_score = 0.65141
+Iter 109952, Minibatch Loss= 0.372924, Testing Accuracy= 0.66340, Precision = 0.67360, Recall = 0.70756, f1_score = 0.69016
+shuffled!
+Iter 111232, Minibatch Loss= 0.345392, Testing Accuracy= 0.63847, Precision = 0.61681, Recall = 0.83866, f1_score = 0.71083
+Iter 112512, Minibatch Loss= 0.327742, Testing Accuracy= 0.65183, Precision = 0.68149, Recall = 0.64370, f1_score = 0.66206
+Iter 113792, Minibatch Loss= 0.326212, Testing Accuracy= 0.64915, Precision = 0.70722, Recall = 0.57647, f1_score = 0.63519
+Iter 115072, Minibatch Loss= 0.337413, Testing Accuracy= 0.65361, Precision = 0.66246, Recall = 0.70588, f1_score = 0.68348
+shuffled!
+Iter 116352, Minibatch Loss= 0.329550, Testing Accuracy= 0.64470, Precision = 0.70940, Recall = 0.55798, f1_score = 0.62465
+Iter 117632, Minibatch Loss= 0.316968, Testing Accuracy= 0.64826, Precision = 0.69380, Recall = 0.60168, f1_score = 0.64446
+Iter 118912, Minibatch Loss= 0.315703, Testing Accuracy= 0.65717, Precision = 0.68953, Recall = 0.64202, f1_score = 0.66493
+Iter 120192, Minibatch Loss= 0.318364, Testing Accuracy= 0.64648, Precision = 0.64776, Recall = 0.72941, f1_score = 0.68617
+shuffled!
+Iter 121472, Minibatch Loss= 0.300294, Testing Accuracy= 0.65539, Precision = 0.63904, Recall = 0.80336, f1_score = 0.71184
+Iter 122752, Minibatch Loss= 0.302157, Testing Accuracy= 0.65094, Precision = 0.69333, Recall = 0.61176, f1_score = 0.65000
+Iter 124032, Minibatch Loss= 0.305359, Testing Accuracy= 0.65895, Precision = 0.68996, Recall = 0.64706, f1_score = 0.66782
+Iter 125312, Minibatch Loss= 0.343805, Testing Accuracy= 0.65984, Precision = 0.66063, Recall = 0.73613, f1_score = 0.69634
+shuffled!
+Iter 126592, Minibatch Loss= 0.334861, Testing Accuracy= 0.64559, Precision = 0.62453, Recall = 0.83025, f1_score = 0.71284
+Iter 127872, Minibatch Loss= 0.306009, Testing Accuracy= 0.66251, Precision = 0.66314, Recall = 0.73782, f1_score = 0.69849
+Iter 129152, Minibatch Loss= 0.301799, Testing Accuracy= 0.65628, Precision = 0.71816, Recall = 0.57815, f1_score = 0.64060
+Iter 130432, Minibatch Loss= 0.296493, Testing Accuracy= 0.64381, Precision = 0.68642, Recall = 0.60336, f1_score = 0.64222
+Iter 131712, Minibatch Loss= 0.284237, Testing Accuracy= 0.66607, Precision = 0.69231, Recall = 0.66555, f1_score = 0.67866
+shuffled!
+Iter 132992, Minibatch Loss= 0.250693, Testing Accuracy= 0.65717, Precision = 0.68817, Recall = 0.64538, f1_score = 0.66609
+Iter 134272, Minibatch Loss= 0.275175, Testing Accuracy= 0.67053, Precision = 0.70344, Recall = 0.65378, f1_score = 0.67770
+Iter 135552, Minibatch Loss= 0.241386, Testing Accuracy= 0.64915, Precision = 0.68577, Recall = 0.62353, f1_score = 0.65317
+Iter 136832, Minibatch Loss= 0.310557, Testing Accuracy= 0.65895, Precision = 0.66667, Recall = 0.71261, f1_score = 0.68887
+shuffled!
+Iter 138112, Minibatch Loss= 0.275751, Testing Accuracy= 0.65984, Precision = 0.65685, Recall = 0.74958, f1_score = 0.70016
+Iter 139392, Minibatch Loss= 0.243518, Testing Accuracy= 0.66785, Precision = 0.68317, Recall = 0.69580, f1_score = 0.68943
+Iter 140672, Minibatch Loss= 0.238952, Testing Accuracy= 0.67320, Precision = 0.67221, Recall = 0.74790, f1_score = 0.70804
+Iter 141952, Minibatch Loss= 0.267112, Testing Accuracy= 0.64559, Precision = 0.64636, Recall = 0.73109, f1_score = 0.68612
+shuffled!
+Iter 143232, Minibatch Loss= 0.252950, Testing Accuracy= 0.67231, Precision = 0.68576, Recall = 0.70420, f1_score = 0.69486
+Iter 144512, Minibatch Loss= 0.262769, Testing Accuracy= 0.65984, Precision = 0.65872, Recall = 0.74286, f1_score = 0.69826
+Iter 145792, Minibatch Loss= 0.263276, Testing Accuracy= 0.64915, Precision = 0.68440, Recall = 0.62689, f1_score = 0.65439
+Iter 147072, Minibatch Loss= 0.271633, Testing Accuracy= 0.66162, Precision = 0.70476, Recall = 0.62185, f1_score = 0.66071
+Iter 148352, Minibatch Loss= 0.312721, Testing Accuracy= 0.65806, Precision = 0.72117, Recall = 0.57815, f1_score = 0.64179
+shuffled!
+Iter 149632, Minibatch Loss= 0.271314, Testing Accuracy= 0.65004, Precision = 0.71489, Recall = 0.56471, f1_score = 0.63099
+begin layer =  2
+shuffled!
+Iter 1152, Minibatch Loss= 4.006941, Testing Accuracy= 0.52983, Precision = 0.52983, Recall = 1.00000, f1_score = 0.69267
+Iter 2432, Minibatch Loss= 1.020478, Testing Accuracy= 0.47017, Precision = 0.00000, Recall = 0.00000, f1_score = 0.00000
+Iter 3712, Minibatch Loss= 0.691939, Testing Accuracy= 0.47106, Precision = 0.66667, Recall = 0.00336, f1_score = 0.00669
+Iter 4992, Minibatch Loss= 0.691380, Testing Accuracy= 0.52983, Precision = 0.52983, Recall = 1.00000, f1_score = 0.69267
+shuffled!
+Iter 6272, Minibatch Loss= 0.686409, Testing Accuracy= 0.52894, Precision = 0.52946, Recall = 0.99664, f1_score = 0.69155
+Iter 7552, Minibatch Loss= 0.682830, Testing Accuracy= 0.53161, Precision = 0.53083, Recall = 0.99832, f1_score = 0.69312
+Iter 8832, Minibatch Loss= 0.711733, Testing Accuracy= 0.47284, Precision = 0.80000, Recall = 0.00672, f1_score = 0.01333
+Iter 10112, Minibatch Loss= 0.686894, Testing Accuracy= 0.53517, Precision = 0.53617, Recall = 0.90924, f1_score = 0.67456
+shuffled!
+Iter 11392, Minibatch Loss= 0.668031, Testing Accuracy= 0.54052, Precision = 0.54207, Recall = 0.85546, f1_score = 0.66362
+Iter 12672, Minibatch Loss= 0.656233, Testing Accuracy= 0.54942, Precision = 0.54258, Recall = 0.95294, f1_score = 0.69146
+Iter 13952, Minibatch Loss= 0.643703, Testing Accuracy= 0.55120, Precision = 0.55542, Recall = 0.76639, f1_score = 0.64407
+Iter 15232, Minibatch Loss= 0.638389, Testing Accuracy= 0.55833, Precision = 0.55098, Recall = 0.89916, f1_score = 0.68327
+shuffled!
+Iter 16512, Minibatch Loss= 0.592404, Testing Accuracy= 0.56545, Precision = 0.57973, Recall = 0.65378, f1_score = 0.61453
+Iter 17792, Minibatch Loss= 0.544817, Testing Accuracy= 0.56723, Precision = 0.58050, Recall = 0.66050, f1_score = 0.61792
+Iter 19072, Minibatch Loss= 0.554680, Testing Accuracy= 0.58059, Precision = 0.57579, Recall = 0.79160, f1_score = 0.66667
+Iter 20352, Minibatch Loss= 0.593341, Testing Accuracy= 0.58148, Precision = 0.60032, Recall = 0.62857, f1_score = 0.61412
+Iter 21632, Minibatch Loss= 0.556343, Testing Accuracy= 0.56545, Precision = 0.55784, Recall = 0.86723, f1_score = 0.67895
+shuffled!
+Iter 22912, Minibatch Loss= 0.532629, Testing Accuracy= 0.58237, Precision = 0.58726, Recall = 0.71261, f1_score = 0.64389
+Iter 24192, Minibatch Loss= 0.535043, Testing Accuracy= 0.56990, Precision = 0.58723, Recall = 0.63361, f1_score = 0.60954
+Iter 25472, Minibatch Loss= 0.501060, Testing Accuracy= 0.57881, Precision = 0.57011, Recall = 0.83361, f1_score = 0.67713
+Iter 26752, Minibatch Loss= 0.496862, Testing Accuracy= 0.59127, Precision = 0.59605, Recall = 0.70924, f1_score = 0.64774
+shuffled!
+Iter 28032, Minibatch Loss= 0.466575, Testing Accuracy= 0.58593, Precision = 0.58464, Recall = 0.75462, f1_score = 0.65884
+Iter 29312, Minibatch Loss= 0.462032, Testing Accuracy= 0.58860, Precision = 0.61368, Recall = 0.60336, f1_score = 0.60847
+Iter 30592, Minibatch Loss= 0.508744, Testing Accuracy= 0.56901, Precision = 0.67290, Recall = 0.36303, f1_score = 0.47162
+Iter 31872, Minibatch Loss= 0.485873, Testing Accuracy= 0.60018, Precision = 0.61196, Recall = 0.67059, f1_score = 0.63994
+shuffled!
+Iter 33152, Minibatch Loss= 0.494985, Testing Accuracy= 0.59929, Precision = 0.58641, Recall = 0.82689, f1_score = 0.68619
+Iter 34432, Minibatch Loss= 0.446050, Testing Accuracy= 0.58949, Precision = 0.63730, Recall = 0.52269, f1_score = 0.57433
+Iter 35712, Minibatch Loss= 0.445090, Testing Accuracy= 0.60196, Precision = 0.60278, Recall = 0.72941, f1_score = 0.66008
+Iter 36992, Minibatch Loss= 0.445244, Testing Accuracy= 0.59573, Precision = 0.59289, Recall = 0.75630, f1_score = 0.66470
+Iter 38272, Minibatch Loss= 0.469897, Testing Accuracy= 0.59038, Precision = 0.57593, Recall = 0.86050, f1_score = 0.69003
+shuffled!
+Iter 39552, Minibatch Loss= 0.453932, Testing Accuracy= 0.60374, Precision = 0.63538, Recall = 0.59160, f1_score = 0.61271
+Iter 40832, Minibatch Loss= 0.436254, Testing Accuracy= 0.60107, Precision = 0.68895, Recall = 0.45042, f1_score = 0.54472
+Iter 42112, Minibatch Loss= 0.450285, Testing Accuracy= 0.60997, Precision = 0.63419, Recall = 0.62353, f1_score = 0.62881
+Iter 43392, Minibatch Loss= 0.461543, Testing Accuracy= 0.60730, Precision = 0.60462, Recall = 0.74790, f1_score = 0.66867
+shuffled!
+Iter 44672, Minibatch Loss= 0.415990, Testing Accuracy= 0.60552, Precision = 0.62258, Recall = 0.64874, f1_score = 0.63539
+Iter 45952, Minibatch Loss= 0.387715, Testing Accuracy= 0.62155, Precision = 0.62957, Recall = 0.69412, f1_score = 0.66027
+Iter 47232, Minibatch Loss= 0.412122, Testing Accuracy= 0.62333, Precision = 0.64576, Recall = 0.64034, f1_score = 0.64304
+Iter 48512, Minibatch Loss= 0.407822, Testing Accuracy= 0.61888, Precision = 0.65209, Recall = 0.60168, f1_score = 0.62587
+shuffled!
+Iter 49792, Minibatch Loss= 0.422966, Testing Accuracy= 0.64470, Precision = 0.64040, Recall = 0.75126, f1_score = 0.69142
+Iter 51072, Minibatch Loss= 0.373580, Testing Accuracy= 0.62333, Precision = 0.63738, Recall = 0.67059, f1_score = 0.65356
+Iter 52352, Minibatch Loss= 0.386618, Testing Accuracy= 0.61710, Precision = 0.63242, Recall = 0.66218, f1_score = 0.64696
+Iter 53632, Minibatch Loss= 0.378518, Testing Accuracy= 0.64203, Precision = 0.63421, Recall = 0.76639, f1_score = 0.69406
+Iter 54912, Minibatch Loss= 0.404569, Testing Accuracy= 0.64292, Precision = 0.64742, Recall = 0.71597, f1_score = 0.67997
+shuffled!
+Iter 56192, Minibatch Loss= 0.354657, Testing Accuracy= 0.59840, Precision = 0.60169, Recall = 0.71597, f1_score = 0.65388
+Iter 57472, Minibatch Loss= 0.371411, Testing Accuracy= 0.63580, Precision = 0.66373, Recall = 0.63361, f1_score = 0.64832
+Iter 58752, Minibatch Loss= 0.396275, Testing Accuracy= 0.62689, Precision = 0.65603, Recall = 0.62185, f1_score = 0.63848
+Iter 60032, Minibatch Loss= 0.375697, Testing Accuracy= 0.63491, Precision = 0.63504, Recall = 0.73109, f1_score = 0.67969
+shuffled!
+Iter 61312, Minibatch Loss= 0.340931, Testing Accuracy= 0.64470, Precision = 0.67438, Recall = 0.63697, f1_score = 0.65514
+Iter 62592, Minibatch Loss= 0.317240, Testing Accuracy= 0.63847, Precision = 0.65882, Recall = 0.65882, f1_score = 0.65882
+Iter 63872, Minibatch Loss= 0.338082, Testing Accuracy= 0.64203, Precision = 0.65149, Recall = 0.69748, f1_score = 0.67370
+Iter 65152, Minibatch Loss= 0.355225, Testing Accuracy= 0.62511, Precision = 0.62288, Recall = 0.74118, f1_score = 0.67690
+shuffled!
+Iter 66432, Minibatch Loss= 0.343676, Testing Accuracy= 0.65183, Precision = 0.65692, Recall = 0.71765, f1_score = 0.68594
+Iter 67712, Minibatch Loss= 0.298385, Testing Accuracy= 0.65717, Precision = 0.65579, Recall = 0.74286, f1_score = 0.69661
+Iter 68992, Minibatch Loss= 0.320623, Testing Accuracy= 0.64114, Precision = 0.65190, Recall = 0.69244, f1_score = 0.67156
+Iter 70272, Minibatch Loss= 0.353822, Testing Accuracy= 0.65094, Precision = 0.67002, Recall = 0.67227, f1_score = 0.67114
+shuffled!
+Iter 71552, Minibatch Loss= 0.327652, Testing Accuracy= 0.65717, Precision = 0.65130, Recall = 0.75966, f1_score = 0.70132
+Iter 72832, Minibatch Loss= 0.294363, Testing Accuracy= 0.64826, Precision = 0.65924, Recall = 0.69580, f1_score = 0.67702
+Iter 74112, Minibatch Loss= 0.312437, Testing Accuracy= 0.63758, Precision = 0.63165, Recall = 0.75798, f1_score = 0.68908
+Iter 75392, Minibatch Loss= 0.312297, Testing Accuracy= 0.62600, Precision = 0.62170, Recall = 0.75126, f1_score = 0.68037
+Iter 76672, Minibatch Loss= 0.332275, Testing Accuracy= 0.66785, Precision = 0.68137, Recall = 0.70084, f1_score = 0.69097
+shuffled!
+Iter 77952, Minibatch Loss= 0.279920, Testing Accuracy= 0.63224, Precision = 0.66021, Recall = 0.63025, f1_score = 0.64488
+Iter 79232, Minibatch Loss= 0.292435, Testing Accuracy= 0.65450, Precision = 0.70495, Recall = 0.59832, f1_score = 0.64727
+Iter 80512, Minibatch Loss= 0.289392, Testing Accuracy= 0.66073, Precision = 0.70420, Recall = 0.62017, f1_score = 0.65952
+Iter 81792, Minibatch Loss= 0.280227, Testing Accuracy= 0.67053, Precision = 0.66376, Recall = 0.76639, f1_score = 0.71139
+shuffled!
+Iter 83072, Minibatch Loss= 0.292639, Testing Accuracy= 0.67053, Precision = 0.67020, Recall = 0.74454, f1_score = 0.70541
+Iter 84352, Minibatch Loss= 0.274115, Testing Accuracy= 0.66874, Precision = 0.68309, Recall = 0.69916, f1_score = 0.69103
+Iter 85632, Minibatch Loss= 0.304652, Testing Accuracy= 0.62422, Precision = 0.61278, Recall = 0.78992, f1_score = 0.69016
+Iter 86912, Minibatch Loss= 0.307392, Testing Accuracy= 0.65093, Precision = 0.63961, Recall = 0.78151, f1_score = 0.70348
+shuffled!
+Iter 88192, Minibatch Loss= 0.318926, Testing Accuracy= 0.64648, Precision = 0.66391, Recall = 0.67395, f1_score = 0.66889
+Iter 89472, Minibatch Loss= 0.244252, Testing Accuracy= 0.64559, Precision = 0.66667, Recall = 0.66218, f1_score = 0.66442
+Iter 90752, Minibatch Loss= 0.266865, Testing Accuracy= 0.64826, Precision = 0.69305, Recall = 0.60336, f1_score = 0.64510
+Iter 92032, Minibatch Loss= 0.285156, Testing Accuracy= 0.65004, Precision = 0.65303, Recall = 0.72437, f1_score = 0.68685
+Iter 93312, Minibatch Loss= 0.301602, Testing Accuracy= 0.65272, Precision = 0.66776, Recall = 0.68571, f1_score = 0.67662
+shuffled!
+Iter 94592, Minibatch Loss= 0.256994, Testing Accuracy= 0.64114, Precision = 0.65047, Recall = 0.69748, f1_score = 0.67315
+Iter 95872, Minibatch Loss= 0.238084, Testing Accuracy= 0.63847, Precision = 0.68000, Recall = 0.60000, f1_score = 0.63750
+Iter 97152, Minibatch Loss= 0.240415, Testing Accuracy= 0.64470, Precision = 0.69522, Recall = 0.58655, f1_score = 0.63628
+Iter 98432, Minibatch Loss= 0.244820, Testing Accuracy= 0.65895, Precision = 0.65588, Recall = 0.74958, f1_score = 0.69961
+shuffled!
+Iter 99712, Minibatch Loss= 0.220920, Testing Accuracy= 0.65361, Precision = 0.65373, Recall = 0.73613, f1_score = 0.69249
+Iter 100992, Minibatch Loss= 0.221392, Testing Accuracy= 0.64826, Precision = 0.64245, Recall = 0.75798, f1_score = 0.69545
+Iter 102272, Minibatch Loss= 0.234662, Testing Accuracy= 0.67409, Precision = 0.69506, Recall = 0.68571, f1_score = 0.69036
+Iter 103552, Minibatch Loss= 0.249457, Testing Accuracy= 0.66696, Precision = 0.68264, Recall = 0.69412, f1_score = 0.68833
+shuffled!
+Iter 104832, Minibatch Loss= 0.232212, Testing Accuracy= 0.65093, Precision = 0.67901, Recall = 0.64706, f1_score = 0.66265
+Iter 106112, Minibatch Loss= 0.211032, Testing Accuracy= 0.67320, Precision = 0.69388, Recall = 0.68571, f1_score = 0.68977
+Iter 107392, Minibatch Loss= 0.225467, Testing Accuracy= 0.65272, Precision = 0.65649, Recall = 0.72269, f1_score = 0.68800
+Iter 108672, Minibatch Loss= 0.228969, Testing Accuracy= 0.63847, Precision = 0.64253, Recall = 0.71597, f1_score = 0.67727
+Iter 109952, Minibatch Loss= 0.219737, Testing Accuracy= 0.66162, Precision = 0.66214, Recall = 0.73782, f1_score = 0.69793
+shuffled!
+Iter 111232, Minibatch Loss= 0.183510, Testing Accuracy= 0.65183, Precision = 0.66558, Recall = 0.68908, f1_score = 0.67713
+Iter 112512, Minibatch Loss= 0.211233, Testing Accuracy= 0.66518, Precision = 0.65893, Recall = 0.76303, f1_score = 0.70717
+Iter 113792, Minibatch Loss= 0.216041, Testing Accuracy= 0.67053, Precision = 0.69100, Recall = 0.68403, f1_score = 0.68750
+Iter 115072, Minibatch Loss= 0.216469, Testing Accuracy= 0.66785, Precision = 0.67077, Recall = 0.73277, f1_score = 0.70040
+shuffled!
+Iter 116352, Minibatch Loss= 0.208578, Testing Accuracy= 0.64826, Precision = 0.66556, Recall = 0.67563, f1_score = 0.67056
+Iter 117632, Minibatch Loss= 0.193902, Testing Accuracy= 0.67231, Precision = 0.69076, Recall = 0.69076, f1_score = 0.69076
+Iter 118912, Minibatch Loss= 0.226684, Testing Accuracy= 0.64915, Precision = 0.66778, Recall = 0.67227, f1_score = 0.67002
+Iter 120192, Minibatch Loss= 0.208132, Testing Accuracy= 0.65806, Precision = 0.67381, Recall = 0.68739, f1_score = 0.68053
+shuffled!
+Iter 121472, Minibatch Loss= 0.203309, Testing Accuracy= 0.65183, Precision = 0.69173, Recall = 0.61849, f1_score = 0.65306
+Iter 122752, Minibatch Loss= 0.216582, Testing Accuracy= 0.65984, Precision = 0.67205, Recall = 0.69916, f1_score = 0.68534
+Iter 124032, Minibatch Loss= 0.243669, Testing Accuracy= 0.65895, Precision = 0.66987, Recall = 0.70252, f1_score = 0.68581
+Iter 125312, Minibatch Loss= 0.276503, Testing Accuracy= 0.67142, Precision = 0.70545, Recall = 0.65210, f1_score = 0.67773
+shuffled!
+Iter 126592, Minibatch Loss= 0.220447, Testing Accuracy= 0.65450, Precision = 0.70175, Recall = 0.60504, f1_score = 0.64982
+Iter 127872, Minibatch Loss= 0.181722, Testing Accuracy= 0.66429, Precision = 0.69746, Recall = 0.64706, f1_score = 0.67132
+Iter 129152, Minibatch Loss= 0.191700, Testing Accuracy= 0.66518, Precision = 0.67921, Recall = 0.69748, f1_score = 0.68823
+Iter 130432, Minibatch Loss= 0.204519, Testing Accuracy= 0.65717, Precision = 0.68817, Recall = 0.64538, f1_score = 0.66609
+Iter 131712, Minibatch Loss= 0.215680, Testing Accuracy= 0.66073, Precision = 0.68074, Recall = 0.67731, f1_score = 0.67902
+shuffled!
+Iter 132992, Minibatch Loss= 0.178498, Testing Accuracy= 0.64648, Precision = 0.69186, Recall = 0.60000, f1_score = 0.64266
+Iter 134272, Minibatch Loss= 0.185872, Testing Accuracy= 0.65361, Precision = 0.69656, Recall = 0.61345, f1_score = 0.65237
+Iter 135552, Minibatch Loss= 0.203415, Testing Accuracy= 0.66162, Precision = 0.68128, Recall = 0.67899, f1_score = 0.68013
+Iter 136832, Minibatch Loss= 0.228316, Testing Accuracy= 0.67854, Precision = 0.67674, Recall = 0.75294, f1_score = 0.71281
+shuffled!
+Iter 138112, Minibatch Loss= 0.196491, Testing Accuracy= 0.66607, Precision = 0.68519, Recall = 0.68403, f1_score = 0.68461
+Iter 139392, Minibatch Loss= 0.176835, Testing Accuracy= 0.66785, Precision = 0.67183, Recall = 0.72941, f1_score = 0.69944
+Iter 140672, Minibatch Loss= 0.187015, Testing Accuracy= 0.66963, Precision = 0.69310, Recall = 0.67563, f1_score = 0.68426
+Iter 141952, Minibatch Loss= 0.198682, Testing Accuracy= 0.67320, Precision = 0.67647, Recall = 0.73445, f1_score = 0.70427
+shuffled!
+Iter 143232, Minibatch Loss= 0.183015, Testing Accuracy= 0.65539, Precision = 0.67687, Recall = 0.66891, f1_score = 0.67287
+Iter 144512, Minibatch Loss= 0.167547, Testing Accuracy= 0.67053, Precision = 0.69430, Recall = 0.67563, f1_score = 0.68484
+Iter 145792, Minibatch Loss= 0.187579, Testing Accuracy= 0.65984, Precision = 0.66210, Recall = 0.73109, f1_score = 0.69489
+Iter 147072, Minibatch Loss= 0.175168, Testing Accuracy= 0.66162, Precision = 0.65973, Recall = 0.74622, f1_score = 0.70032
+Iter 148352, Minibatch Loss= 0.201460, Testing Accuracy= 0.66340, Precision = 0.67472, Recall = 0.70420, f1_score = 0.68914
+shuffled!
+Iter 149632, Minibatch Loss= 0.169719, Testing Accuracy= 0.67053, Precision = 0.68908, Recall = 0.68908, f1_score = 0.68908
+begin layer =  3
+shuffled!
+Iter 1152, Minibatch Loss= 3.138521, Testing Accuracy= 0.52983, Precision = 0.52983, Recall = 1.00000, f1_score = 0.69267
+Iter 2432, Minibatch Loss= 0.845083, Testing Accuracy= 0.52983, Precision = 0.52983, Recall = 1.00000, f1_score = 0.69267
+Iter 3712, Minibatch Loss= 0.738287, Testing Accuracy= 0.52983, Precision = 0.52983, Recall = 1.00000, f1_score = 0.69267
+Iter 4992, Minibatch Loss= 0.698533, Testing Accuracy= 0.52983, Precision = 0.52983, Recall = 1.00000, f1_score = 0.69267
+shuffled!
+Iter 6272, Minibatch Loss= 0.689785, Testing Accuracy= 0.52983, Precision = 0.52983, Recall = 1.00000, f1_score = 0.69267
+Iter 7552, Minibatch Loss= 0.689244, Testing Accuracy= 0.52983, Precision = 0.52983, Recall = 1.00000, f1_score = 0.69267
+Iter 8832, Minibatch Loss= 0.688855, Testing Accuracy= 0.52983, Precision = 0.52983, Recall = 1.00000, f1_score = 0.69267
+Iter 10112, Minibatch Loss= 0.693057, Testing Accuracy= 0.52983, Precision = 0.52983, Recall = 1.00000, f1_score = 0.69267
+shuffled!
+Iter 11392, Minibatch Loss= 0.697219, Testing Accuracy= 0.52983, Precision = 0.52983, Recall = 1.00000, f1_score = 0.69267
+Iter 12672, Minibatch Loss= 0.687380, Testing Accuracy= 0.52983, Precision = 0.52983, Recall = 1.00000, f1_score = 0.69267
+Iter 13952, Minibatch Loss= 0.677252, Testing Accuracy= 0.52983, Precision = 0.52983, Recall = 1.00000, f1_score = 0.69267
+Iter 15232, Minibatch Loss= 0.665640, Testing Accuracy= 0.53785, Precision = 0.54524, Recall = 0.76975, f1_score = 0.63833
+shuffled!
+Iter 16512, Minibatch Loss= 0.690604, Testing Accuracy= 0.53072, Precision = 0.68280, Recall = 0.21345, f1_score = 0.32522
+Iter 17792, Minibatch Loss= 0.622824, Testing Accuracy= 0.57079, Precision = 0.55748, Recall = 0.92101, f1_score = 0.69455
+Iter 19072, Minibatch Loss= 0.570161, Testing Accuracy= 0.56278, Precision = 0.56420, Recall = 0.76807, f1_score = 0.65053
+Iter 20352, Minibatch Loss= 0.541935, Testing Accuracy= 0.55922, Precision = 0.57163, Recall = 0.67059, f1_score = 0.61717
+Iter 21632, Minibatch Loss= 0.557044, Testing Accuracy= 0.57881, Precision = 0.58047, Recall = 0.73950, f1_score = 0.65041
+shuffled!
+Iter 22912, Minibatch Loss= 0.497127, Testing Accuracy= 0.56812, Precision = 0.57812, Recall = 0.68403, f1_score = 0.62664
+Iter 24192, Minibatch Loss= 0.472374, Testing Accuracy= 0.57614, Precision = 0.56474, Recall = 0.87227, f1_score = 0.68560
+Iter 25472, Minibatch Loss= 0.508027, Testing Accuracy= 0.57524, Precision = 0.57642, Recall = 0.74790, f1_score = 0.65106
+Iter 26752, Minibatch Loss= 0.487462, Testing Accuracy= 0.57970, Precision = 0.57621, Recall = 0.78151, f1_score = 0.66334
+shuffled!
+Iter 28032, Minibatch Loss= 0.458890, Testing Accuracy= 0.57346, Precision = 0.57398, Recall = 0.75630, f1_score = 0.65265
+Iter 29312, Minibatch Loss= 0.418382, Testing Accuracy= 0.57792, Precision = 0.57610, Recall = 0.76975, f1_score = 0.65899
+Iter 30592, Minibatch Loss= 0.447198, Testing Accuracy= 0.58415, Precision = 0.57494, Recall = 0.82521, f1_score = 0.67771
+Iter 31872, Minibatch Loss= 0.439911, Testing Accuracy= 0.58415, Precision = 0.57583, Recall = 0.81681, f1_score = 0.67547
+shuffled!
+Iter 33152, Minibatch Loss= 0.430232, Testing Accuracy= 0.59038, Precision = 0.58222, Recall = 0.80336, f1_score = 0.67514
+Iter 34432, Minibatch Loss= 0.419921, Testing Accuracy= 0.59216, Precision = 0.60088, Recall = 0.68571, f1_score = 0.64050
+Iter 35712, Minibatch Loss= 0.409997, Testing Accuracy= 0.58860, Precision = 0.58281, Recall = 0.78655, f1_score = 0.66953
+Iter 36992, Minibatch Loss= 0.410191, Testing Accuracy= 0.59127, Precision = 0.62546, Recall = 0.56975, f1_score = 0.59631
+Iter 38272, Minibatch Loss= 0.412561, Testing Accuracy= 0.58949, Precision = 0.58053, Recall = 0.81176, f1_score = 0.67694
+shuffled!
+Iter 39552, Minibatch Loss= 0.343090, Testing Accuracy= 0.59662, Precision = 0.60114, Recall = 0.70924, f1_score = 0.65073
+Iter 40832, Minibatch Loss= 0.386695, Testing Accuracy= 0.59573, Precision = 0.72100, Recall = 0.38655, f1_score = 0.50328
+Iter 42112, Minibatch Loss= 0.384979, Testing Accuracy= 0.60819, Precision = 0.60265, Recall = 0.76471, f1_score = 0.67407
+Iter 43392, Minibatch Loss= 0.379935, Testing Accuracy= 0.60908, Precision = 0.59653, Recall = 0.81008, f1_score = 0.68710
+shuffled!
+Iter 44672, Minibatch Loss= 0.365800, Testing Accuracy= 0.61086, Precision = 0.61003, Recall = 0.73613, f1_score = 0.66717
+Iter 45952, Minibatch Loss= 0.343724, Testing Accuracy= 0.62422, Precision = 0.64489, Recall = 0.64706, f1_score = 0.64597
+Iter 47232, Minibatch Loss= 0.372805, Testing Accuracy= 0.60463, Precision = 0.61119, Recall = 0.69748, f1_score = 0.65149
+Iter 48512, Minibatch Loss= 0.379063, Testing Accuracy= 0.60997, Precision = 0.60828, Recall = 0.74118, f1_score = 0.66818
+shuffled!
+Iter 49792, Minibatch Loss= 0.356515, Testing Accuracy= 0.61354, Precision = 0.61073, Recall = 0.74622, f1_score = 0.67171
+Iter 51072, Minibatch Loss= 0.332173, Testing Accuracy= 0.59484, Precision = 0.60174, Recall = 0.69580, f1_score = 0.64536
+Iter 52352, Minibatch Loss= 0.345767, Testing Accuracy= 0.61175, Precision = 0.66879, Recall = 0.52941, f1_score = 0.59099
+Iter 53632, Minibatch Loss= 0.372208, Testing Accuracy= 0.61354, Precision = 0.59734, Recall = 0.83025, f1_score = 0.69480
+Iter 54912, Minibatch Loss= 0.327778, Testing Accuracy= 0.61621, Precision = 0.61919, Recall = 0.71597, f1_score = 0.66407
+shuffled!
+Iter 56192, Minibatch Loss= 0.275194, Testing Accuracy= 0.61621, Precision = 0.61988, Recall = 0.71261, f1_score = 0.66302
+Iter 57472, Minibatch Loss= 0.314694, Testing Accuracy= 0.59305, Precision = 0.60815, Recall = 0.65210, f1_score = 0.62936
+Iter 58752, Minibatch Loss= 0.345588, Testing Accuracy= 0.60997, Precision = 0.60155, Recall = 0.78151, f1_score = 0.67982
+Iter 60032, Minibatch Loss= 0.351291, Testing Accuracy= 0.62778, Precision = 0.67456, Recall = 0.57479, f1_score = 0.62069
+shuffled!
+Iter 61312, Minibatch Loss= 0.321470, Testing Accuracy= 0.60641, Precision = 0.62240, Recall = 0.65378, f1_score = 0.63770
+Iter 62592, Minibatch Loss= 0.288646, Testing Accuracy= 0.61621, Precision = 0.68222, Recall = 0.51597, f1_score = 0.58756
+Iter 63872, Minibatch Loss= 0.302952, Testing Accuracy= 0.59751, Precision = 0.63516, Recall = 0.56471, f1_score = 0.59786
+Iter 65152, Minibatch Loss= 0.317765, Testing Accuracy= 0.61977, Precision = 0.63681, Recall = 0.65714, f1_score = 0.64682
+shuffled!
+Iter 66432, Minibatch Loss= 0.287218, Testing Accuracy= 0.62066, Precision = 0.61785, Recall = 0.74454, f1_score = 0.67530
+Iter 67712, Minibatch Loss= 0.307952, Testing Accuracy= 0.61086, Precision = 0.60972, Recall = 0.73782, f1_score = 0.66768
+Iter 68992, Minibatch Loss= 0.321166, Testing Accuracy= 0.63669, Precision = 0.68155, Recall = 0.58992, f1_score = 0.63243
+Iter 70272, Minibatch Loss= 0.326291, Testing Accuracy= 0.60730, Precision = 0.60158, Recall = 0.76639, f1_score = 0.67406
+shuffled!
+Iter 71552, Minibatch Loss= 0.310528, Testing Accuracy= 0.63758, Precision = 0.67029, Recall = 0.62185, f1_score = 0.64516
+Iter 72832, Minibatch Loss= 0.273609, Testing Accuracy= 0.61710, Precision = 0.63285, Recall = 0.66050, f1_score = 0.64638
+Iter 74112, Minibatch Loss= 0.250368, Testing Accuracy= 0.61977, Precision = 0.62537, Recall = 0.70420, f1_score = 0.66245
+Iter 75392, Minibatch Loss= 0.276624, Testing Accuracy= 0.62956, Precision = 0.61638, Recall = 0.79664, f1_score = 0.69501
+Iter 76672, Minibatch Loss= 0.293383, Testing Accuracy= 0.63758, Precision = 0.62567, Recall = 0.78655, f1_score = 0.69695
+shuffled!
+Iter 77952, Minibatch Loss= 0.240239, Testing Accuracy= 0.63580, Precision = 0.67159, Recall = 0.61176, f1_score = 0.64028
+Iter 79232, Minibatch Loss= 0.246593, Testing Accuracy= 0.63758, Precision = 0.63390, Recall = 0.74790, f1_score = 0.68620
+Iter 80512, Minibatch Loss= 0.274008, Testing Accuracy= 0.62778, Precision = 0.64975, Recall = 0.64538, f1_score = 0.64755
+Iter 81792, Minibatch Loss= 0.268985, Testing Accuracy= 0.61799, Precision = 0.71503, Recall = 0.46387, f1_score = 0.56269
+shuffled!
+Iter 83072, Minibatch Loss= 0.258977, Testing Accuracy= 0.61175, Precision = 0.62175, Recall = 0.68235, f1_score = 0.65064
+Iter 84352, Minibatch Loss= 0.248856, Testing Accuracy= 0.61443, Precision = 0.61571, Recall = 0.72437, f1_score = 0.66564
+Iter 85632, Minibatch Loss= 0.261789, Testing Accuracy= 0.63847, Precision = 0.62857, Recall = 0.77647, f1_score = 0.69474
+Iter 86912, Minibatch Loss= 0.267575, Testing Accuracy= 0.62066, Precision = 0.61623, Recall = 0.75294, f1_score = 0.67776
+shuffled!
+Iter 88192, Minibatch Loss= 0.273143, Testing Accuracy= 0.63402, Precision = 0.63731, Recall = 0.71765, f1_score = 0.67510
+Iter 89472, Minibatch Loss= 0.217598, Testing Accuracy= 0.64559, Precision = 0.65319, Recall = 0.70588, f1_score = 0.67851
+Iter 90752, Minibatch Loss= 0.262839, Testing Accuracy= 0.63402, Precision = 0.67557, Recall = 0.59496, f1_score = 0.63271
+Iter 92032, Minibatch Loss= 0.249994, Testing Accuracy= 0.61888, Precision = 0.61878, Recall = 0.73109, f1_score = 0.67026
+Iter 93312, Minibatch Loss= 0.263880, Testing Accuracy= 0.64203, Precision = 0.67387, Recall = 0.62857, f1_score = 0.65043
+shuffled!
+Iter 94592, Minibatch Loss= 0.223405, Testing Accuracy= 0.63045, Precision = 0.65679, Recall = 0.63361, f1_score = 0.64500
+Iter 95872, Minibatch Loss= 0.219662, Testing Accuracy= 0.63313, Precision = 0.71230, Recall = 0.51597, f1_score = 0.59844
+Iter 97152, Minibatch Loss= 0.236097, Testing Accuracy= 0.61888, Precision = 0.63027, Recall = 0.67899, f1_score = 0.65372
+Iter 98432, Minibatch Loss= 0.264812, Testing Accuracy= 0.62155, Precision = 0.61518, Recall = 0.76303, f1_score = 0.68117
+shuffled!
+Iter 99712, Minibatch Loss= 0.220748, Testing Accuracy= 0.64114, Precision = 0.62183, Recall = 0.82353, f1_score = 0.70860
+Iter 100992, Minibatch Loss= 0.221607, Testing Accuracy= 0.61354, Precision = 0.62637, Recall = 0.67059, f1_score = 0.64773
+Iter 102272, Minibatch Loss= 0.259461, Testing Accuracy= 0.62867, Precision = 0.62125, Recall = 0.76639, f1_score = 0.68623
+Iter 103552, Minibatch Loss= 0.232216, Testing Accuracy= 0.61443, Precision = 0.61005, Recall = 0.75462, f1_score = 0.67468
+shuffled!
+Iter 104832, Minibatch Loss= 0.232270, Testing Accuracy= 0.62867, Precision = 0.61741, Recall = 0.78655, f1_score = 0.69180
+Iter 106112, Minibatch Loss= 0.209763, Testing Accuracy= 0.62689, Precision = 0.62903, Recall = 0.72101, f1_score = 0.67189
+Iter 107392, Minibatch Loss= 0.205557, Testing Accuracy= 0.62778, Precision = 0.70726, Recall = 0.50756, f1_score = 0.59100
+Iter 108672, Minibatch Loss= 0.228639, Testing Accuracy= 0.62778, Precision = 0.62845, Recall = 0.72773, f1_score = 0.67445
+Iter 109952, Minibatch Loss= 0.246565, Testing Accuracy= 0.63758, Precision = 0.64596, Recall = 0.69916, f1_score = 0.67151
+shuffled!
+Iter 111232, Minibatch Loss= 0.192225, Testing Accuracy= 0.63134, Precision = 0.64812, Recall = 0.66555, f1_score = 0.65672
+Iter 112512, Minibatch Loss= 0.197784, Testing Accuracy= 0.61710, Precision = 0.63866, Recall = 0.63866, f1_score = 0.63866
+Iter 113792, Minibatch Loss= 0.200249, Testing Accuracy= 0.64203, Precision = 0.64006, Recall = 0.74118, f1_score = 0.68692
+Iter 115072, Minibatch Loss= 0.231372, Testing Accuracy= 0.63313, Precision = 0.62551, Recall = 0.76639, f1_score = 0.68882
+shuffled!
+Iter 116352, Minibatch Loss= 0.199910, Testing Accuracy= 0.64025, Precision = 0.64625, Recall = 0.70924, f1_score = 0.67628
+Iter 117632, Minibatch Loss= 0.204601, Testing Accuracy= 0.63936, Precision = 0.66379, Recall = 0.64706, f1_score = 0.65532
+Iter 118912, Minibatch Loss= 0.180725, Testing Accuracy= 0.62778, Precision = 0.65180, Recall = 0.63866, f1_score = 0.64516
+Iter 120192, Minibatch Loss= 0.188905, Testing Accuracy= 0.62333, Precision = 0.65580, Recall = 0.60840, f1_score = 0.63121
+shuffled!
+Iter 121472, Minibatch Loss= 0.206914, Testing Accuracy= 0.61175, Precision = 0.67396, Recall = 0.51765, f1_score = 0.58555
+Iter 122752, Minibatch Loss= 0.189091, Testing Accuracy= 0.61354, Precision = 0.66197, Recall = 0.55294, f1_score = 0.60256
+Iter 124032, Minibatch Loss= 0.205625, Testing Accuracy= 0.62867, Precision = 0.62535, Recall = 0.74622, f1_score = 0.68046
+Iter 125312, Minibatch Loss= 0.205007, Testing Accuracy= 0.62689, Precision = 0.63538, Recall = 0.69412, f1_score = 0.66345
+shuffled!
+Iter 126592, Minibatch Loss= 0.197085, Testing Accuracy= 0.62155, Precision = 0.63754, Recall = 0.66218, f1_score = 0.64963
+Iter 127872, Minibatch Loss= 0.173964, Testing Accuracy= 0.61888, Precision = 0.65725, Recall = 0.58655, f1_score = 0.61989
+Iter 129152, Minibatch Loss= 0.183896, Testing Accuracy= 0.64915, Precision = 0.68998, Recall = 0.61345, f1_score = 0.64947
+Iter 130432, Minibatch Loss= 0.208822, Testing Accuracy= 0.59751, Precision = 0.63619, Recall = 0.56134, f1_score = 0.59643
+Iter 131712, Minibatch Loss= 0.195479, Testing Accuracy= 0.62155, Precision = 0.67068, Recall = 0.56134, f1_score = 0.61116
+shuffled!
+Iter 132992, Minibatch Loss= 0.179607, Testing Accuracy= 0.62066, Precision = 0.62861, Recall = 0.69412, f1_score = 0.65974
+Iter 134272, Minibatch Loss= 0.159217, Testing Accuracy= 0.60819, Precision = 0.62520, Recall = 0.65042, f1_score = 0.63756
+Iter 135552, Minibatch Loss= 0.180769, Testing Accuracy= 0.60908, Precision = 0.65726, Recall = 0.54790, f1_score = 0.59762
+Iter 136832, Minibatch Loss= 0.208793, Testing Accuracy= 0.64381, Precision = 0.67695, Recall = 0.62689, f1_score = 0.65096
+shuffled!
+Iter 138112, Minibatch Loss= 0.187519, Testing Accuracy= 0.59216, Precision = 0.61551, Recall = 0.61345, f1_score = 0.61448
+Iter 139392, Minibatch Loss= 0.174715, Testing Accuracy= 0.63758, Precision = 0.65161, Recall = 0.67899, f1_score = 0.66502
+Iter 140672, Minibatch Loss= 0.153976, Testing Accuracy= 0.65004, Precision = 0.65683, Recall = 0.71092, f1_score = 0.68281
+Iter 141952, Minibatch Loss= 0.196999, Testing Accuracy= 0.62778, Precision = 0.63470, Recall = 0.70084, f1_score = 0.66613
+shuffled!
+Iter 143232, Minibatch Loss= 0.202916, Testing Accuracy= 0.64826, Precision = 0.64577, Recall = 0.74454, f1_score = 0.69165
+Iter 144512, Minibatch Loss= 0.174746, Testing Accuracy= 0.63847, Precision = 0.65416, Recall = 0.67395, f1_score = 0.66391
+Iter 145792, Minibatch Loss= 0.175157, Testing Accuracy= 0.64114, Precision = 0.63714, Recall = 0.74958, f1_score = 0.68880
+Iter 147072, Minibatch Loss= 0.189754, Testing Accuracy= 0.63224, Precision = 0.65066, Recall = 0.66050, f1_score = 0.65555
+Iter 148352, Minibatch Loss= 0.208677, Testing Accuracy= 0.65361, Precision = 0.64672, Recall = 0.76303, f1_score = 0.70008
