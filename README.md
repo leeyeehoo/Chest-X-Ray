@@ -14,4 +14,7 @@
 **nin.py** contains model and train routes    
 
 
-Accuracy 60.55% Precision 67.02% Recall 73.58% F1score 70.03%  
+Accuracy 60.55% Precision 67.02% Recall 73.58% F1score 70.03%   
+loss&f1score:  
+
+![loss&f1score](loss&f1.png)
