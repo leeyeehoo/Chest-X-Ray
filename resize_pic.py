@@ -13,4 +13,4 @@ def resize_Img(batchsize,src,dst,fx,fy):
         resize_img=cv2.resize(img,(fx,fy),interpolation=cv2.INTER_CUBIC)
         cv2.imwrite('%s/%d.png'%(dst,i),resize_img)
         
-resize_Img(500,"image 2","resize_image_2",224,224)
+resize_Img(6738,"classification","classification",224,224)

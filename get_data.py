@@ -15,7 +15,7 @@ class Scrapy():
         self.domain = 'https://openi.nlm.nih.gov/'
         self.regex = re.compile(r"var oi = (.*);")
         self.final_data = {}
-        self.path = 'image/'
+        self.path = 'classification/'
         self.img_idx = 0
         self.img_des=[]
     # The total number of the images is 7450,
@@ -51,7 +51,7 @@ class Scrapy():
 
         urllib.urlretrieve(self.domain+img, self.path+str(self.img_idx)+".png")
 
-        with open('image/data_new.json', 'w') as f:
+        with open('classification/data_new.json', 'w') as f:
             json.dump(self.final_data, f)
 
         print(self.img_idx, self.final_data[self.img_idx])

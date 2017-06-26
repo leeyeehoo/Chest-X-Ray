@@ -13,11 +13,11 @@ def write_Out(descript):
     writer = csv.writer(csvfile)
     writer.writerows(descript)
 
-with open('image/data_new.json', 'r') as f:
+with open('classification/data_new.json', 'r') as f:
     data = json.load(f)
 test_data=[]
 for i in range(1,6739):
-    if data['%d'%i]['items']==data['1']['items']:
+    if data['%d'%i]['items']==data['1115']['items']:
         test_data.append([i,0])
     else:
         test_data.append([i,1])
